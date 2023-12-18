@@ -86,12 +86,12 @@ var finances = [
   ["Jan-2017", 138230],
   ["Feb-2017", 671099],
 ];
-
+// define some variables
 var totalMonths = finances.length - 1;
-var total = 0;
+var totalAmount = 0;
 var change = 0;
-var date; //e.g. Jan-2010; =currenetMonth[0]
-var amount; //e.g 867884; =crrentMonth[1]
+var date; //e.g. Jan-2010; =currentMonth[0]
+var amount; //e.g 867884; =currentMonth[1]
 var currentMonth; //e.g. Jan-2010 & 867884 together = finances i
 var previousAmount;
 var greatestIncrease = 0;
@@ -99,13 +99,14 @@ var greatestIncreaseMonth = "";
 var greatestDecrease = 0;
 var greatestDecreaseMonth = "";
 
+// Show Total Months
 console.log(`Total Months: ${finances.length}`);
 
 for (var i = 0; i <= totalMonths; i++) {
-  currentMonth = finances[i]; // finances[0] = ['Jan-2010', 867884]
-  date = currentMonth[0]; // currentMonth = ['Jan-2010', 867884]=finances[i];
+  currentMonth = finances[i];
+  date = currentMonth[0];
   amount = currentMonth[1];
-  total += amount; // total = total + amount
+  totalAmount += amount; // totalAmount = totalAmount + amount
   // 867884 = 867884 + 984655
 
   if (i > 0) {
@@ -123,7 +124,7 @@ for (var i = 0; i <= totalMonths; i++) {
   previousAmount = amount;
 }
 
-console.log(`Total: $${total}`);
+console.log(`Total: $${totalAmount}`);
 var averageChange = Math.round((change / totalMonths) * 100) / 100;
 console.log(`Average Change: ${averageChange}`);
 console.log(
