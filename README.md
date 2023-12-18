@@ -1,8 +1,8 @@
-# Console-Finances
+#  Console-Finances
 
 ## Description 
- *creating code for analyzing the financial records of a company;
- *Showing the Financial Analysis result in Console:
+* creating code for analyzing the financial records of a company.
+* Showing the Financial Analysis result in Console.
   ----------------
   Total Months: 86
   Total: $38382578
